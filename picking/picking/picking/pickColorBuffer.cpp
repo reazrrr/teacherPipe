@@ -56,14 +56,14 @@ int init_resources()
 	GLfloat vertices[] = {
 		// vertex postion		    // vertex color
 		// x        y       z       // r      g       b       a
-		-0.5f,	-0.5f,	 0.5f,		0.0f,	1.0f,	0.0f,	1.0f,		//0            
-		0.5f,	-0.5f,	 0.5f,		1.0f,	1.0f,	0.0f,	1.0f,		//1            
-		0.5f,	-0.5f,	-0.5f,		0.0f,	1.0f,	1.0f,	1.0f,		//2            7-------6 
-		-0.5f,	-0.5f,	-0.5f,		1.0f,	0.0f,	0.0f,	1.0f,		//3            |\      |\	
-		-0.5f,	 0.5f,	 0.5f,		1.0f,	0.0f,	1.0f,	1.0f,		//4            | 4-----|-5
-		0.5f,	 0.5f,   0.5f,		0.0f,	0.0f,	1.0f,	1.0f,		//5            3-|-----2 |
-		0.5f,	 0.5f,  -0.5f,		0.4f,	0.2f,	0.8f,	1.0f,		//6             \|      \|
-		-0.5f,	 0.5f,  -0.5f,		0.8f,	0.4f,	0.0f,	1.0f		//7              0-------1
+		-0.6f,	-0.6f,	 0.6f,		0.8f,	0.4f,	0.0f,	1.0f,		//0            
+		0.6f,	-0.6f,	 0.6f,		0.4f,	0.2f,	0.8f,	1.0f,		//1            
+		0.6f,	-0.6f,	-0.6f,		0.0f,	0.0f,	1.0f,	1.0f,		//2            7-------6 
+		-0.6f,	-0.6f,	-0.6f,		1.0f,	0.0f,	1.0f,	1.0f,		//3            |\      |\	
+		-0.6f,	 0.6f,	 0.6f,		1.0f,	0.0f,	0.0f,	1.0f,		//4            | 4-----|-5
+		0.6f,	 0.6f,   0.6f,		0.0f,	1.0f,	1.0f,	1.0f,		//5            3-|-----2 |
+		0.6f,	 0.6f,  -0.6f,		1.0f,	1.0f,	0.0f,	1.0f,		//6             \|      \|
+		-0.6f,	 0.6f,  -0.6f,		0.0f,	1.0f,	0.0f,	1.0f		//7              0-------1
 	};
 
 	GLuint indices[] = {
@@ -111,8 +111,8 @@ int init_resources()
 		);
 	projection = glm::perspective(45.0f, (GLfloat)screenWidth / (GLfloat)screenHeight, 0.1f, 100.0f);
 
-	cube1.SetModel(glm::translate(glm::mat4(), glm::vec3(0.3f, 0.0f, -2.0f)));
-	cube2.SetModel(glm::translate(glm::mat4(), glm::vec3(-0.3f, 0.0f, 0.0f)));
+	cube1.SetModel(glm::translate(glm::mat4(), glm::vec3(0.4f, 0.1f, -2.0f)));
+	cube2.SetModel(glm::translate(glm::mat4(), glm::vec3(-0.4f, -0.1f, 0.0f)));
 
 
 	return 1;
